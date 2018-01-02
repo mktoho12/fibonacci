@@ -1,0 +1,18 @@
+{
+  "name": "fibonacci",
+  "description": "入門コースの3章3節 フィボナッチ数列",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mktoho12/fibonacci"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
