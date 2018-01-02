@@ -1,12 +1,13 @@
 'use strict'
 
+const memo = new Map()
+memo.set(0, 0)
+memo.set(1, 1)
 const fib = (n) => {
-  if (n === 0) {
-    return 0
-  } else if (n === 1) {
-    return 1
+  if(!memo.has(n)) {
+    memo.set(n, fib(n - 2) + fib(n - 1))
   }
-  return fib(n - 2) + fib(n - 1)
+  return memo.get(n)
 }
 
 const length = 40
